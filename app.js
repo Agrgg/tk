@@ -32,8 +32,9 @@ window.onload = function () {
             total += value;
             result += (value + ' ');
         }
-        result += '\n ';
+        result += '<br />&nbsp;';
         result += letters.join('  ');
-        output.innerText = result;
+        result += '<br/><b>Итого: ' + total + '</b>';
+        output.innerHTML = result;
     }
 }
